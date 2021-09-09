@@ -1,0 +1,339 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  font-family: "Source Han Sans JP";
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #353535;
+  background-color: #ffffff;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+header, .mainVisual, main, footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+nav a {
+  font-size: 2rem;
+}
+
+.toTopIcon {
+  width: 50px;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  z-index: 2;
+}
+
+/* ---------- header ---------- */
+header {
+  height: 64px;
+  padding: 0 8px;
+  border-bottom: 1px solid #ffffff;
+  -webkit-box-shadow: 1px 1px 6px #ffffff;
+          box-shadow: 1px 1px 6px #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  position: absolute;
+  z-index: 1;
+}
+
+header h1.h-logo {
+  width: 88px;
+}
+
+header .h-navNormal {
+  display: none;
+}
+
+header .openMenu {
+  width: 35px;
+  cursor: pointer;
+}
+
+/* ---------- header ---------- */
+/* ---------- navMobile ---------- */
+.navMobile {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.navMobile ul {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+.navMobile ul li {
+  width: 100%;
+  padding: 32px;
+}
+
+.navMobile ul li:first-of-type {
+  height: calc(100vh / 10);
+}
+
+.navMobile ul li a {
+  width: 60%;
+  margin: 0 auto;
+  color: #353535;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.navMobile ul li a::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: #57FFCE;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.navMobile ul li .closeMenu {
+  width: 35px;
+  margin: 0 auto;
+}
+
+.navMobile.\.active {
+  display: block;
+}
+
+/* ---------- navMobile ---------- */
+/* ---------- mainVisual ---------- */
+.mainVisual {
+  min-height: 100vh;
+  margin-bottom: 64px;
+  -webkit-box-shadow: 4px 4px 8px rgba(53, 53, 53, 0.5);
+          box-shadow: 4px 4px 8px rgba(53, 53, 53, 0.5);
+  position: relative;
+}
+
+.mainVisual h2 {
+  font-family: "游明朝体 Pr6";
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 3px 3px 9px #353535;
+  position: absolute;
+  top: calc(50% - 24px);
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+/* ---------- mainVisual ---------- */
+/* ---------- main ---------- */
+.m-contents {
+  width: 80%;
+  margin: 0 auto;
+  padding: 64px 0;
+  position: relative;
+}
+
+h3 {
+  margin: 24px 0 16px;
+  font-family: "游明朝体 Pr6";
+  font-size: 2.4rem;
+  font-weight: 700;
+  position: relative;
+}
+
+/* ---------- main ---------- */
+/* ---------- footer ---------- */
+footer {
+  height: 132px;
+  margin-top: 64px;
+  font-size: 1rem;
+  border-top: 1.5px solid #57FFCE;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+footer .f-copywrite {
+  padding: 16px;
+  text-align: center;
+}
+
+footer .f-linkArea {
+  width: 100%;
+  height: 96px;
+  padding: 16px;
+  background-color: rgba(236, 236, 236, 0.5);
+  text-align: center;
+}
+
+footer .f-linkArea a {
+  color: #555555;
+}
+
+/* ---------- footer ---------- */
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.3rem;
+  }
+  nav li {
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  nav li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border-bottom: 1.5px solid rgba(87, 255, 207, 0.7);
+  }
+  nav a {
+    font-size: 1.6rem;
+  }
+  .toTopIcon {
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .toTopIcon:hover {
+    opacity: .5;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  /* ---------- header ---------- */
+  header {
+    padding: 0 16px;
+  }
+  header .h-navNormal {
+    display: block;
+  }
+  header .h-navNormal ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .h-navNormal ul li:not(:last-of-type) {
+    margin-right: 1.5em;
+  }
+  header .h-navNormal ul li a {
+    padding: 0 8px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(55, 55, 55, 0.5);
+  }
+  .openMenu {
+    display: none;
+  }
+  /* ---------- header ---------- */
+  /* ---------- main ---------- */
+  h3 {
+    margin: 24px 0 16px;
+    font-family: "游明朝体 Pr6";
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: relative;
+  }
+  /* ---------- main ---------- */
+}
+
+@media screen and (min-width: 1420px) {
+  body {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  .h-navNormal a {
+    font-size: 2rem;
+  }
+}

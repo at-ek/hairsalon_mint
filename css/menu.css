@@ -1,0 +1,131 @@
+/* ---------- mainVisual ---------- */
+.mainVisual {
+  background-image: url("../../../img/menu_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------- mainVisual ---------- */
+/* ---------- main ---------- */
+.m-contents {
+  margin: 64px auto;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.m-contents::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid #ececec;
+  border-top: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.m-contents::after {
+  content: "";
+  width: 100%;
+  height: 24px;
+  background-color: rgba(87, 255, 207, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+h3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 16px;
+}
+
+h3::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url("../../../img/leaf.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 8px;
+  left: -1.5em;
+  -webkit-transform: scaleX(-1) rotate(-75deg);
+          transform: scaleX(-1) rotate(-75deg);
+}
+
+.m-contents ul li {
+  margin: 0 auto 8px;
+  color: #555555;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+.m-contents ul li h4 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.m-contents ul li .dottedLine {
+  margin: 0 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  border-bottom: 2px dotted #555555;
+}
+
+/* ---------- main ---------- */
+@media screen and (min-width: 600px) {
+  /* ---------- main ---------- */
+  main {
+    padding: 0 32px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .m-contents {
+    width: 40%;
+  }
+  /* ---------- main ---------- */
+}
